@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details</title>
+  <link rel="stylesheet" href="event.css">
+</head>
+<body>
+  <div class="background">
+    <nav>
+      <h2>Wedding</h2>
+      <a href="index.html">Home</a>
+      <a href="event.html">Event Details</a>
+      <a href="#guestbook-container">GuestBook</a>
+      <a href="#location_map">Location</a>
+    </nav>
+
+    <div class="event_container">
+      <div class="event">
+        <img src="haldi.jpg" alt="Haldi Image">
+        <div class="details">
+          <h3>Haldi Ceremony</h3>
+          <p>
+            It involves applying turmeric paste to the bride and groom's skin,
+            The vibrant yellow color of turmeric symbolizes auspiciousness and is said to bring good luck and prosperity to the couple's married life.<br>
+
+            <mark>Location for Haldi Ceremony:</mark><br>
+            <a href="https://maps.app.goo.gl/Tyx9dZS8uKL2CFkj9">Bride</a><br>
+            <a href="https://maps.app.goo.gl/Tyx9dZS8uKL2CFkj9">Groom</a>
+          </p>
+        </div>
+      </div>
+    
+      <div class="event">
+        <img src="mehendi.jpg" alt="Mehendi Image">
+        <div class="details">
+          <h3>Mehendi Ceremony</h3>
+          <p>
+            The Mehendi symbolizes love, joy, and the bond between the bride and groom, and its fragrance fills the air with the anticipation of the upcoming wedding.<br>
+
+            <a href="https://maps.app.goo.gl/Tyx9dZS8uKL2CFkj9"><mark>Bride's Mehendi Location</mark></a>
+          </p>
+        </div>
+      </div>
+    
+      <div class="event">
+        <img src="wedding.jpg" alt="Wedding Image">
+        <div class="details">
+          <h3>Wedding Ceremony</h3>
+          <p>
+            The wedding ceremony is a sacred union of two souls in the presence of family and friends. 
+            It marks the beginning of a lifelong journey together, as the bride and groom exchange vows and promise to support each other through life's joys and challenges.
+          </p>
+        </div>
+      </div>
+    
+      <div class="event">
+        <img src="reception.jpg" alt="Reception Image">
+        <div class="details">
+          <h3>Reception Ceremony</h3>
+          <p>
+            Where family and friends gather to bless the newlywed couple and celebrate their union. 
+            The reception is a time for the couple to express their gratitude to everyone who has supported and witnessed their journey of love.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="guestbook-container" id="guestbook-container">
+      <h2>Guest Book</h2>
+      <form id="guestbook-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="send">Submit</button>
+      </form>
+      <div id="guestbook-messages">
+        <!-- Messages will be displayed here -->
+      </div>
+    </div>
+
+
+    <div class="location_map"  id="location_map">
+      <!-- Insert your map HTML element here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4633.5878615111205!2d76.6801086197868!3d12.42522196920628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7700582bc729%3A0x3667324ebdf18259!2sAthmalingeshwara%20Temple%2C%20Hanumanthanagar%2C%20KM%20Doddi!5e0!3m2!1sen!2sin!4v1708065011604!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</body>
+</html>

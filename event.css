@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgba(147, 39, 156, 0.904);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+h2 {
+  color: #fff;
+  font-style: italic;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 20px;
+}
+
+.event_container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.event {
+  width: calc(50% - 20px); /* Adjusted width to ensure two events fit in one line with spacing */
+  background-color: #fff; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  margin-bottom: 40px; /* Add margin bottom for spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  position: relative; /* Set position to relative */
+  overflow: hidden; /* Hide overflowing content */
+  transition: 0.3s ease-in-out;
+}
+
+.event:hover {
+  height: 360px; /* Increase height on hover to accommodate expanded content */
+}
+
+.event img {
+  width: 100%; /* Set image width to 100% */
+  height: 300px; 
+  border-radius: 10px; /* Add border radius */
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.event .details {
+  position: absolute; /* Position details absolutely */
+  top: 100%; /* Initial position below the event */
+  left: 0; /* Align details to the left */
+  width: 100%; /* Set details width to 100% */
+  padding: 10px; /* Add padding */
+  background-color: rgba(219, 216, 191, 0.9); /* Set background color with opacity */
+  transition: 0.3s ease-in-out; /* Add transition for smooth effect */
+  visibility: hidden; /* Hide details initially */
+  opacity: 0;
+  transform: translateY(20px); /* Move details downwards slightly */
+}
+
+.event:hover .details {
+  top: auto; /* Move details upwards on hover */
+  bottom: 0; /* Align details to the bottom */
+  visibility: visible; /* Make details visible on hover */
+  opacity: 1; /* Make details fully visible */
+  transform: translateY(0); /* Reset transform for smooth appearance */
+}
+
+.event .details a{
+  text-decoration: none;
+  
+}
+
+.event h3 {
+  font-size: 18px; /* Set title font size */
+  margin-top: 10px; /* Add margin top */
+  text-align: center; /* Center text */
+}
+
+
+.location_map {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+}
+
+.location_map iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjust width as needed */
+  height: 90%; /* Adjust height as needed */
+}
+
+.guestbook-container {
+  width: 40%; /* Adjust the width as needed */
+  margin: 50px auto; /* Center the container horizontally */
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ccc; /* Background color */
+  background-image: url('download.jpg');
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+.guestbook-container h2 {
+  text-align: center; /* Center the heading */
+  color: rgb(129, 23, 155);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%; /* Take up full width of the container */
+  padding: 10px;
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  background-color: #2d7255; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #276d2b; /* Button background color on hover */
+}
